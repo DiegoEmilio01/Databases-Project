@@ -119,3 +119,76 @@ cd Entrega1/
 l
 cd ..
 exit
+l
+ls -HELP
+ls -h
+ls --help
+ls -d Entrega1/
+
+git pull
+ls .alt
+ls -alt
+rm .bash_history
+ls -alt
+ls -R
+git status
+cd Entrega1/
+cat entrega_1.pdf 
+
+cd ..
+ls
+cd grupo99
+cd Entrega1/
+psql
+exit
+cd Entrega1/
+psql
+exit
+l
+cs Entrega1/
+cd Entrega1/
+ls
+cat test.txt
+cd ..
+ls
+git pull
+git status
+git pull
+ls
+cd Entrega1/
+ls
+cat entrega_1.pdf 
+rm test.txt 
+ls
+git status
+git add --all
+git status
+git commit -m "eliminar test.txt"
+git push
+git status
+psql
+ls -alt
+cd Entrega1/
+ls -alt
+cd ..
+ls -alt
+psql
+ls -alt
+psql
+psql grupo99e2
+psql grupo99e3
+exit
+ls
+cd ..
+ls
+cd grupo99
+tree
+ls -alt
+mkdir Entrega2
+ls
+mkdir Entrega3
+mkdir Entrega4
+mkdir Entrega5
+mkdir Sites
+ls
+psql
