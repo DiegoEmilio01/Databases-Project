@@ -1,25 +1,11 @@
-<<<<<<< HEAD:Entrega2/csv/Ciudad.csv
 cid,ciudad
-0,Florencia
-2,Westminster
-1,Bruselas
-7,París
-4,Milán
-3,Antwerp
-6,Roma
-5,Dresde
-9,Chantilly
-8,Nancy
-=======
-cid,nombre
-0,Florencia
-2,Westminster
-1,Bruselas
-7,París
-4,Milán
-3,Antwerp
-6,Roma
-5,Dresde
-9,Chantilly
-8,Nancy
->>>>>>> 1b2f1a755d73c9ca57f7f8eedacfe0e96a4361a2:Entrega2/csv/Ciudades.csv
+0,Nancy
+7,Chantilly
+6,Antwerp
+4,Roma
+5,Florencia
+8,Westminster
+1,Milán
+2,Dresde
+9,Bruselas
+3,París
