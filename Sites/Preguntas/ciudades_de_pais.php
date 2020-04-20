@@ -6,24 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Estadias - temporada alta</title>
+		<title>Usuarios - correo</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-	</head>
+    </head>
 	<body class="is-preload">
-		<?php
-			$user = 'grupo99';
-			$password = 'Bbdd314';
-			$databaseName = 'grupo99e2';
-			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
-
-			$query_string  = "SELECT U.uid, U.nombre, R.f_in, R.f_out, H.nombre FROM Usuarios AS U, RUH, Reservas AS R, Hoteles AS H WHERE U.uid = RUH.uid AND R.rid = RUH.rid AND H.hid = RUH.hid AND '2020/01/01' <= R.f_in AND R.f_out <= '2020/03/31';";
-			$query = $db -> prepare($query_string);
-			$query -> execute();
-			$result = $query -> fetchAll();
-		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -61,15 +50,13 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Lista de usuarios y su correo</h1>
-							<table class = "alt">	
-								<?php
-									echo "<tr><th>Identificador del usuario</th><th>Nombre del usuario</th><th>Fecha de inicio</th><th>Fecha de término</th><th>Nombre del hotel</th></tr>";
-									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td><td>$r[4]</td></tr>";
-									}
-								?>
-							</table>
+                            <h1>Ciudades por pais</h1>
+                            <form action=../Resultado/ciudades_de_pais.php>
+                                <label for="nombrepais">Ingrese pais:</label>
+                                <input type="text" id ="nombrepais" name="nombrepais">
+                                <input type="submit" value="Buscar">
+                            </form>
+							
 						</div>
 					</div>
 
