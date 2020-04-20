@@ -22,7 +22,7 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
+								<a href="index.php" class="logo">
 									<span class="symbol"><img src="images/logo.svg" alt="" /></span>GoArt<span class="title"></span>
 								</a>
 
@@ -40,14 +40,13 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.php">Usuarios</a></li>
-							<li><a href="generic.php">Ciudades</a></li>
-							<li><a href="generic.php">Paises visitados</a></li>
-							<li><a href="generic.php">Gasto en tickets</a></li>
-							<li><a href="generic.php">Estadías en temporada alta</a></li>
-							<li><a href="generic.php">Gastos por fecha</a></li>
-							<li><a href="elements.php">Elements</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="Resultado/usuarios.php">Usuarios</a></li>
+							<li><a href="Preguntas/ciudades_de_pais.php">Ciudades</a></li>
+							<li><a href="Preguntas/paies_visitados.php">Paises visitados</a></li>
+							<li><a href="Preguntas/gasto_en_tickets.php">Gasto en tickets</a></li>
+							<li><a href="Resultado/estadias.php">Estadías en temporada alta</a></li>
+							<li><a href="Preguntas/genericgasto_intervalo.php">Gastos por fecha</a></li>
 						</ul>
 					</nav>
 
@@ -59,7 +58,7 @@
 								<p>En esta página podra realizar diferentes consultas a nuestra base de datos. Seleccione una categoría:</p>
 							</header>
 							<section class="tiles">
-								<article class="style1">
+								<article class="style1"> <!-- listo -->
 									<span class="image">
 										<img src="images/pic01.jpg" alt="" />
 									</span>
@@ -70,7 +69,7 @@
 										</div>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2"> <!-- listo -->
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
@@ -85,7 +84,7 @@
 									<span class="image">
 										<img src="images/pic03.jpg" alt="" />
 									</span>
-									<a href="generic.php">
+									<a href="Preguntas/paises_visitados.php">
 										<h2>Paises visitados</h2>
 										<div class="content">
 											<p>Ingrese su <i>username</i> &nbsp;y vea todos los paises en los que ha hospedado con nosotros.</p>
@@ -96,14 +95,14 @@
 									<span class="image">
 										<img src="images/pic04.jpg" alt="" />
 									</span>
-									<a href="generic.php">
+									<a href="Preguntas/gasto_en_tickets.php">
 										<h2>Gasto en tickets</h2>
 										<div class="content">
 											<p>Ingrese su <i>user ID</i> &nbsp;para revisar cuanto dinero en total ha gastado en tickets nuestros.</p>
 										</div>
 									</a>
 								</article>
-								<article class="style5">
+								<article class="style5">  <!-- listo -->
 									<span class="image">
 										<img src="images/pic05.jpg" alt="" />
 									</span>
@@ -118,7 +117,7 @@
 									<span class="image">
 										<img src="images/pic06.jpg" alt="" />
 									</span>
-									<a href="generic.php">
+									<a href="Preguntas/gasto_intervalo.php">
 										<h2>Gastos por fecha</h2>
 										<div class="content">
 											<p>Ingrese un intervalo de tiempo para ver cuanto ha gastado cada usuario en tickets en ese intervalo.</p>

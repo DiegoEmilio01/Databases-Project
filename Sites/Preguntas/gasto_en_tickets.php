@@ -6,27 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Estadias - temporada alta</title>
+		<title>Ciudades - país</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-	</head>
-
+    </head>
 	<body class="is-preload">
-		<?php
-			$user = 'grupo99';
-			$password = 'Bbdd314';
-			$databaseName = 'grupo99e2';
-			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
-
-			$pais = $_POST["nombrepais"];
-
-			$query_string  = "SELECT ciudad FROM Ciudades NATURAL JOIN CEP WHERE CEP.pais ~* '.*$pais.*';";
-			$query = $db -> prepare($query_string);
-			$query -> execute();
-			$result = $query -> fetchAll();
-		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -64,15 +50,13 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Lista de ciudades</h1>
-							<table class = "alt">	
-								<?php
-									echo "<tr><th>Ciudad</th></tr>";
-									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td></tr>";
-									}
-								?>
-							</table>
+                            <h1>Total gastado en tickets</h1>
+                            <form action="../Resultado/gastos_en_tickets.php" method="post">
+                                <label for="userid">Ingrese su <i>user ID</i>:</label>
+                                <input type="text" id ="userid" name="userid"><br>
+                                <input type="submit" value="Buscar">
+                            </form>
+							
 						</div>
 					</div>
 

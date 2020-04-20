@@ -20,9 +20,12 @@
 			$databaseName = 'grupo99e2';
 			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
 
-			$pais = $_POST["nombrepais"];
+            $f_start = $_POST["f_start"];
+            $f_end = $_POST["f_end"];
 
-			$query_string  = "SELECT ciudad FROM Ciudades NATURAL JOIN CEP WHERE CEP.pais ~* '.*$pais.*';";
+			$query_string  = "SELECT U.uid, U.nombre, R.f_in, R.f_out, H.nombre FROM Usuarios AS U, RUH, Reservas AS R, Hoteles AS H
+            WHERE U.uid = RUH.uid AND R.rid = RUH.rid AND H.hid = RUH.hid AND '2020/01/01' <= R.f in
+            AND R.f out <= '2020/03/31';";
 			$query = $db -> prepare($query_string);
 			$query -> execute();
 			$result = $query -> fetchAll();
@@ -67,9 +70,9 @@
 							<h1>Lista de ciudades</h1>
 							<table class = "alt">	
 								<?php
-									echo "<tr><th>Ciudad</th></tr>";
+									echo "<tr><th>Identificador de usuario</th><th>Nombre de usuario</th><th>Fecha de inicio</th><th>Fecha de término</th><th>Nombre del hotel</th></tr>";
 									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td></tr>";
+									echo "<tr><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td><td>$r[4]</td></tr>";
 									}
 								?>
 							</table>

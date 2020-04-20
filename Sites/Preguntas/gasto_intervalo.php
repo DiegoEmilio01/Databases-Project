@@ -6,27 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Estadias - temporada alta</title>
+		<title>Ciudades - país</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-	</head>
-
+    </head>
 	<body class="is-preload">
-		<?php
-			$user = 'grupo99';
-			$password = 'Bbdd314';
-			$databaseName = 'grupo99e2';
-			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
-
-			$pais = $_POST["nombrepais"];
-
-			$query_string  = "SELECT ciudad FROM Ciudades NATURAL JOIN CEP WHERE CEP.pais ~* '.*$pais.*';";
-			$query = $db -> prepare($query_string);
-			$query -> execute();
-			$result = $query -> fetchAll();
-		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -64,15 +50,15 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Lista de ciudades</h1>
-							<table class = "alt">	
-								<?php
-									echo "<tr><th>Ciudad</th></tr>";
-									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td></tr>";
-									}
-								?>
-							</table>
+                            <h1>Gasto en un intervalo dado</h1>
+                            <form action="../Resultado/gasto_intervalo.php" method="post">
+                                <label for="f_start">Fecha inicial:</label>
+                                <input type="date" id ="f_start" name="f_start" value="2020-01-13"><br>
+                                <label for="f_end">Fecha final:</label>
+                                <input type="date" id ="f_end" name="f_end" value="2020-02-29"><br>
+                                <input type="submit" value="Buscar">
+                            </form>
+							
 						</div>
 					</div>
 

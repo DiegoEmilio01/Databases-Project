@@ -20,9 +20,10 @@
 			$databaseName = 'grupo99e2';
 			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
 
-			$pais = $_POST["nombrepais"];
+			$uid = $_POST["userid"];
 
-			$query_string  = "SELECT ciudad FROM Ciudades NATURAL JOIN CEP WHERE CEP.pais ~* '.*$pais.*';";
+			$query_string  = "SELECT SUM(Viajes.precio) FROM Usuarios AS U, TUV, Tickets AS T, Viajes AS V
+            WHERE U.uid = TUV.uid AND TUV.tid = T.tid AND TUV.vid = V.vid AND U.uid = '$uid' AND T.f_compra <= CURRENT_DATE;";
 			$query = $db -> prepare($query_string);
 			$query -> execute();
 			$result = $query -> fetchAll();
@@ -64,15 +65,10 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Lista de ciudades</h1>
-							<table class = "alt">	
+							<h1>Monto gastado:</h1>
 								<?php
-									echo "<tr><th>Ciudad</th></tr>";
-									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td></tr>";
-									}
+									echo "<h2 align='center'>$ $result[0]</h2>";
 								?>
-							</table>
 						</div>
 					</div>
 
