@@ -69,7 +69,7 @@
 							<h1>Lista de usuarios y su correo</h1>
 							<table class = "alt">
 								<tr>
-									<th>Identicador del usuario</th>
+									<th>Identificador del usuario</th>
 									<th>Nombre del usuario</th>
 									<th>Fecha de inicio</th>
 									<th>Fecha de término</th>
