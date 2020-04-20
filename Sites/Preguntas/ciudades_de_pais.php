@@ -51,7 +51,7 @@
 					<div id="main">
 						<div class="inner">
                             <h1>Buscar ciudades por país</h1>
-                            <form action=../Resultado/ciudades_de_pais.php>
+                            <form action="../Resultado/ciudades_de_pais.php" method="post">
                                 <label for="nombrepais">Ingrese país:</label>
                                 <input type="text" id ="nombrepais" name="nombrepais"><br>
                                 <input type="submit" value="Buscar">
