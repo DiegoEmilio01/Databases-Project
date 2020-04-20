@@ -16,7 +16,7 @@
 		<?php
 			$user = 'grupo99';
 			$password = 'Bbdd314';
-			$databaseName = 'grupo99';
+			$databaseName = 'grupo99e2';
 			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
 
 			$query_string = "SELECT username, correo
