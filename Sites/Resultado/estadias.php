@@ -19,8 +19,10 @@
 			$databaseName = 'grupo99e2';
 			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
 
-			$query_string = "SELECT U.uid AS 'Identificador del usuario', U.nombre AS 'Nombre del usuario', R.f_in AS 'Fecha de inicio', R.f_out AS 'Fecha de término', H.nombre AS 'Nombre del Hotel' FROM Usuarios AS U, RUH, Reservas AS R, Hoteles AS H WHERE U.uid = RUH.uid AND R.rid = RUH.rid AND H.hid = RUH.hid AND '2020/01/01' <= R.f_in AND R.f_out <= '2020/03/31';";
-
+			$query_string  = <<<XML
+				SELECT U.uid, U.nombre, R.f_in, R.f_out, H.nombre FROM Usuarios AS U, RUH, Reservas AS R, Hoteles AS H WHERE U.uid = RUH.uid AND R.rid = RUH.rid AND H.hid = RUH.hid AND '2020/01/01' <= R.f_in AND R.f_out <= '2020/03/31';
+				
+				XML;
 			$query = $db -> prepare($query_string);
 			$query -> execute();
 			$result = $query -> fetchAll();
@@ -74,7 +76,7 @@
 								
 								<?php
 									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td><td>$r[4]</td></tr>";
+									echo "<tr><td>$r[0]</td></tr>";
 									}
 								?>
 							</table>
