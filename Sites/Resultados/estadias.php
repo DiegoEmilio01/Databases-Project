@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Usuarios - correo</title>
+		<title>Estadias - temporada alta</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -19,7 +19,12 @@
 			$databaseName = 'grupo99e2';
 			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
 
-			$query_string = "SELECT username, correo FROM Usuarios;";
+			$query_string = "SELECT U.uid AS "Identicador", U.nombre AS "Nombre del usuario", R.f in AS "Fecha de inicio",
+			R.f out AS "Fecha de término", H.nombre AS "Nombre del Hotel"
+			FROM Usuarios AS U, RUH, Reservas AS R, Hoteles AS H
+			WHERE U.uid = RUH.uid AND R.rid = RUH.rid AND H.hid = RUH.hid AND "2020/01/01" <= R.f in
+			AND R.f out <= "2020/03/31";";
+
 			$query = $db -> prepare($query_string);
 			$query -> execute();
 			$result = $query -> fetchAll();
@@ -64,13 +69,16 @@
 							<h1>Lista de usuarios y su correo</h1>
 							<table class = "alt">
 								<tr>
-									<th>Username</th>
-									<th>Correo</th> 
+									<th>Identicador del usuario</th>
+									<th>Nombre del usuario</th>
+									<th>Fecha de inicio</th>
+									<th>Fecha de término</th>
+									<th>Nombre del Hotel</th>
 								</tr>
 								
 								<?php
 									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td><td>$r[1]</td></tr>";
+									echo "<tr><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td><td>$r[4]</td></tr>";
 									}
 								?>
 							</table>
