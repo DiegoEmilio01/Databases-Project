@@ -26,6 +26,7 @@
 			$query = $db -> prepare($query_string);
 			$query -> execute();
 			$result = $query -> fetchAll();
+			echo "busqueda: $pais"
 		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -67,7 +68,7 @@
 							<h1>Lista de ciudades</h1>
 							<table class = "alt">	
 								<?php
-									echo "<tr><td>Ciudad</td></tr>";
+									echo "<tr><th>Ciudad</th></tr>";
 									foreach ($result as $r) {
 									echo "<tr><td>$r[0]</td></tr>";
 									}
