@@ -41,13 +41,13 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Usuarios</a></li>
-							<li><a href="generic.html">Ciudades</a></li>
-							<li><a href="generic.html">Paises visitados</a></li>
-							<li><a href="generic.html">Gasto en tickets</a></li>
-							<li><a href="generic.html">Estadías en temporada alta</a></li>
-							<li><a href="generic.html">Gastos por fecha</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="generic.php">Usuarios</a></li>
+							<li><a href="generic.php">Ciudades</a></li>
+							<li><a href="generic.php">Paises visitados</a></li>
+							<li><a href="generic.php">Gasto en tickets</a></li>
+							<li><a href="generic.php">Estadías en temporada alta</a></li>
+							<li><a href="generic.php">Gastos por fecha</a></li>
+							<li><a href="elements.php">Elements</a></li>
 						</ul>
 					</nav>
 
@@ -63,7 +63,7 @@
 									<span class="image">
 										<img src="images/pic01.jpg" alt="" />
 									</span>
-									<a href="Resultados/usuarios_resultado.html">
+									<a href="Resultados/usuarios_resultado.php">
 										<h2>Usuarios</h2>
 										<div class="content">
 											<p>Lista de todos los usarios de nuestra base de datos junto a su correo.</p>
@@ -74,7 +74,7 @@
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a href="Preguntas/ciudades.html">i
+									<a href="Preguntas/ciudades.php">
 										<h2>Ciudades</h2>
 										<div class="content">
 											<p>Busque todas las ciudades a las que viajamos en un pais a elección.</p>
@@ -85,7 +85,7 @@
 									<span class="image">
 										<img src="images/pic03.jpg" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="generic.php">
 										<h2>Paises visitados</h2>
 										<div class="content">
 											<p>Ingrese su <i>username</i> &nbsp;y vea todos los paises en los que ha hospedado con nosotros.</p>
@@ -96,7 +96,7 @@
 									<span class="image">
 										<img src="images/pic04.jpg" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="generic.php">
 										<h2>Gasto en tickets</h2>
 										<div class="content">
 											<p>Ingrese su <i>user ID</i> &nbsp;para revisar cuanto dinero en total ha gastado en tickets nuestros.</p>
@@ -107,7 +107,7 @@
 									<span class="image">
 										<img src="images/pic05.jpg" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="generic.php">
 										<h2>Estadías en temporada alta</h2>
 										<div class="content">
 											<p>Lista de todas las reservas agendadas entre el 1 de enero del 2020 y el 31 de marzo del 2020.</p>
@@ -118,7 +118,7 @@
 									<span class="image">
 										<img src="images/pic06.jpg" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="generic.php">
 										<h2>Gastos por fecha</h2>
 										<div class="content">
 											<p>Ingrese un intervalo de tiempo para ver cuanto ha gastado cada usuario en tickets en ese intervalo.</p>
