@@ -64,7 +64,7 @@
 							<h1>Lista de usuarios y su correo</h1>
 							<table class = "alt">
 								<tr>
-									<th>Identificador del usuario</th>
+									<th>Identificador</th>
 									<th>Nombre del usuario</th>
 									<th>Fecha de inicio</th>
 									<th>Fecha de término</th>
@@ -73,7 +73,7 @@
 								
 								<?php
 									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td></tr>";
+									echo "<tr><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td><td>$r[4]</td></tr>";
 									}
 								?>
 							</table>
