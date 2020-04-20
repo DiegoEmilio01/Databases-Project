@@ -74,7 +74,7 @@
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a href="Preguntas/ciudades.php">
+									<a href="Preguntas/ciudades_de_pais.php">
 										<h2>Ciudades</h2>
 										<div class="content">
 											<p>Busque todas las ciudades a las que viajamos en un pais a elección.</p>
