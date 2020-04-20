@@ -53,7 +53,7 @@
                             <h1>Ciudades por pais</h1>
                             <form action=../Resultado/ciudades_de_pais.php>
                                 <label for="nombrepais">Ingrese pais:</label>
-                                <input type="text" id ="nombrepais" name="nombrepais">
+                                <input type="text" id ="nombrepais" name="nombrepais"><br><br>
                                 <input type="submit" value="Buscar">
                             </form>
 							
