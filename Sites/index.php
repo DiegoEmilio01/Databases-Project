@@ -108,7 +108,7 @@
 										<img src="images/pic05.jpg" alt="" />
 									</span>
 									<a href="Resultados/estadias.php">
-										<h2>Estadías en temporada alta</h2>
+										<h2>Estadías en temporada alta </h2>
 										<div class="content">
 											<p>Lista de todas las reservas agendadas entre el 1 de enero del 2020 y el 31 de marzo del 2020.</p>
 										</div>
