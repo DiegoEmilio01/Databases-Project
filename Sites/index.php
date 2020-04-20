@@ -63,7 +63,7 @@
 									<span class="image">
 										<img src="images/pic01.jpg" alt="" />
 									</span>
-									<a href="Resultados/usuarios_resultado.php">
+									<a href="Resultados/usuarios.php">
 										<h2>Usuarios</h2>
 										<div class="content">
 											<p>Lista de todos los usarios de nuestra base de datos junto a su correo.</p>
