@@ -22,7 +22,7 @@
 
 			$pais = $_POST["nombrepais"];
 
-			$query_string  = "SELECT ciudad FROM Ciudades NATURAL JOIN CEP WHERE CEP.pais ~* '.*$pais.*';"
+			$query_string  = "SELECT ciudad FROM Ciudades NATURAL JOIN CEP WHERE CEP.pais ~* '.*$pais.*';";
 			$query = $db -> prepare($query_string);
 			$query -> execute();
 			$result = $query -> fetchAll();

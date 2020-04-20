@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Usuarios - correo</title>
+		<title>Ciudades - país</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -50,10 +50,10 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-                            <h1>Ciudades por pais</h1>
+                            <h1>Buscar ciudades por país</h1>
                             <form action=../Resultado/ciudades_de_pais.php>
-                                <label for="nombrepais">Ingrese pais:</label>
-                                <input type="text" id ="nombrepais" name="nombrepais"><br><br>
+                                <label for="nombrepais">Ingrese país:</label>
+                                <input type="text" id ="nombrepais" name="nombrepais"><br>
                                 <input type="submit" value="Buscar">
                             </form>
 							
