@@ -68,7 +68,7 @@
 							<h1>Países en los que se ha hospedado</h1>
 							<table class = "alt">	
 								<?php
-									echo "<tr><th>Pais</th></tr>";
+									echo "<tr><th>País</th></tr>";
 									foreach ($result as $r) {
 									echo "<tr><td>$r[0]</td></tr>";
 									}

@@ -85,9 +85,9 @@
 										<img src="images/pic03.jpg" alt="" />
 									</span>
 									<a href="Preguntas/paises_visitados.php">
-										<h2>Paises visitados</h2>
+										<h2>Países visitados</h2>
 										<div class="content">
-											<p>Ingrese su <i>username</i> &nbsp;y vea todos los paises en los que ha hospedado con nosotros.</p>
+											<p>Ingrese su <i>username</i> &nbsp;y vea todos los países en los que ha hospedado con nosotros.</p>
 										</div>
 									</a>
 								</article>

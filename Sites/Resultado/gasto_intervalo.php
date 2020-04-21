@@ -28,7 +28,9 @@
             AND R.f out <= '2020/03/31';";
 			$query = $db -> prepare($query_string);
 			$query -> execute();
-			$result = $query -> fetchAll();
+            $result = $query -> fetchAll();
+            echo "$f_start"
+            echo "$f_end"
 		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
