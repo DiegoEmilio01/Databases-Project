@@ -42,7 +42,7 @@
 							<li><a href="../index.php">Home</a></li>
 							<li><a href="../Resultado/usuarios.php">Usuarios</a></li>
 							<li><a href="../Preguntas/ciudades_de_pais.php">Ciudades</a></li>
-							<li><a href="../Preguntas/paies_visitados.php">Países visitados</a></li>
+							<li><a href="../Preguntas/paises_visitados.php">Países visitados</a></li>
 							<li><a href="../Preguntas/gasto_en_tickets.php">Gasto en tickets</a></li>
 							<li><a href="../Resultado/estadias.php">Estadías en temporada alta</a></li>
 							<li><a href="../Preguntas/gasto_intervalo.php">Gastos por fecha</a></li>
@@ -52,7 +52,7 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-                            <h2>Gasto en tickets en un intervalo dado</h2>
+                            <h1>Gasto en tickets en un intervalo dado</h1>
                             <form action="../Resultado/gasto_intervalo.php" method="post">
                                 <label for="f_start">Fecha inicial:</label>
                                 <input type="date" id ="f_start" name="f_start" value="2020-01-13"><br><br>

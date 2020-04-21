@@ -61,7 +61,7 @@
 							<li><a href="../index.php">Home</a></li>
 							<li><a href="../Resultado/usuarios.php">Usuarios</a></li>
 							<li><a href="../Preguntas/ciudades_de_pais.php">Ciudades</a></li>
-							<li><a href="../Preguntas/paies_visitados.php">Países visitados</a></li>
+							<li><a href="../Preguntas/paises_visitados.php">Países visitados</a></li>
 							<li><a href="../Preguntas/gasto_en_tickets.php">Gasto en tickets</a></li>
 							<li><a href="../Resultado/estadias.php">Estadías en temporada alta</a></li>
 							<li><a href="../Preguntas/gasto_intervalo.php">Gastos por fecha</a></li>
@@ -71,11 +71,11 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-                            <?php echo "<h2>Total gastado por usuario entre $f_s2 y $f_e2 </h2>" ?>
+                            <?php echo "<h1>Total gastado por usuario entre $f_s2 y $f_e2 </h1>" ?>
 							<table class = "alt">	
                                 <?php
                                     
-									echo "<tr><th>Identificador de usuario</th><th>Nombre de usuario</th><th>Total gastado</th></tr>";
+									echo "<tr><th>Identificador del usuario</th><th>Nombre del usuario</th><th>Total gastado</th></tr>";
 									foreach ($result as $r) {
 									echo "<tr><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td></tr>";
 									}

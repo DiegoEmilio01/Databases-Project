@@ -23,11 +23,10 @@
 			$uid = $_POST["userid"];
 
 			$query_string  = "SELECT SUM(V.precio) FROM Usuarios AS U, TUV, Tickets AS T, Viajes AS V
-            WHERE U.uid = TUV.uid AND TUV.tid = T.tid AND TUV.vid = V.vid AND U.uid = '$uid' AND T.f_compra <= CURRENT_DATE;";
+            WHERE U.uid = TUV.uid AND TUV.tid = T.tid AND TUV.vid = V.vid AND U.uid = $uid AND T.f_compra <= CURRENT_DATE;";
 			$query = $db -> prepare($query_string);
 			$query -> execute();
             $result = $query -> fetchAll();
-            echo "<h1 align='center'>$ $result[0] </h1>";
 		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -58,7 +57,7 @@
 							<li><a href="../index.php">Home</a></li>
 							<li><a href="../Resultado/usuarios.php">Usuarios</a></li>
 							<li><a href="../Preguntas/ciudades_de_pais.php">Ciudades</a></li>
-							<li><a href="../Preguntas/paies_visitados.php">Países visitados</a></li>
+							<li><a href="../Preguntas/paises_visitados.php">Países visitados</a></li>
 							<li><a href="../Preguntas/gasto_en_tickets.php">Gasto en tickets</a></li>
 							<li><a href="../Resultado/estadias.php">Estadías en temporada alta</a></li>
 							<li><a href="../Preguntas/gasto_intervalo.php">Gastos por fecha</a></li>
@@ -68,9 +67,9 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h2>Monto gastado:</h2>
+							<h1>Monto gastado:</h1>
 								<?php
-									echo "<h1 align='center'>$ $result[0] </h1>";
+									echo "<h2 align='center'>$ $result[0] </h2>";
 								?>
                         </div>
 					</div>
