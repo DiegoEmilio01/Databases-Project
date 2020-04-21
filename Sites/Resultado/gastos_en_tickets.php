@@ -26,7 +26,8 @@
             WHERE U.uid = TUV.uid AND TUV.tid = T.tid AND TUV.vid = V.vid AND U.uid = '$uid' AND T.f_compra <= CURRENT_DATE;";
 			$query = $db -> prepare($query_string);
 			$query -> execute();
-			$result = $query -> fetchAll();
+            $result = $query -> fetchAll();
+            echo "<h1 align='center'>$ $result[0] </h1>";
 		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -54,20 +55,22 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="../index.html">Home</a></li>
-							<li><a href="../generic.html">Ipsum veroeros</a></li>
-							<li><a href="../generic.html">Tempus etiam</a></li>
-							<li><a href="../generic.html">Consequat dolor</a></li>
-							<li><a href="../elements.html">Elements</a></li>
+							<li><a href="../index.php">Home</a></li>
+							<li><a href="../Resultado/usuarios.php">Usuarios</a></li>
+							<li><a href="../Preguntas/ciudades_de_pais.php">Ciudades</a></li>
+							<li><a href="../Preguntas/paies_visitados.php">Paises visitados</a></li>
+							<li><a href="../Preguntas/gasto_en_tickets.php">Gasto en tickets</a></li>
+							<li><a href="../Resultado/estadias.php">Estadías en temporada alta</a></li>
+							<li><a href="../Preguntas/genericgasto_intervalo.php">Gastos por fecha</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Monto gastado:</h1>
+							<h2>Monto gastado:</h2>
 								<?php
-									echo "<p align='center' style='fontsize: 40px'>$ $result[0]</p>";
+									echo "<h1 align='center'>$ $result[0] </h1>";
 								?>
                         </div>
 					</div>

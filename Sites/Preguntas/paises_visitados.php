@@ -39,11 +39,13 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="../index.html">Home</a></li>
-							<li><a href="../generic.html">Ipsum veroeros</a></li>
-							<li><a href="../generic.html">Tempus etiam</a></li>
-							<li><a href="../generic.html">Consequat dolor</a></li>
-							<li><a href="../elements.html">Elements</a></li>
+							<li><a href="../index.php">Home</a></li>
+							<li><a href="../Resultado/usuarios.php">Usuarios</a></li>
+							<li><a href="../Preguntas/ciudades_de_pais.php">Ciudades</a></li>
+							<li><a href="../Preguntas/paies_visitados.php">Paises visitados</a></li>
+							<li><a href="../Preguntas/gasto_en_tickets.php">Gasto en tickets</a></li>
+							<li><a href="../Resultado/estadias.php">Estadías en temporada alta</a></li>
+							<li><a href="../Preguntas/genericgasto_intervalo.php">Gastos por fecha</a></li>
 						</ul>
 					</nav>
 
