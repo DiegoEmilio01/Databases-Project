@@ -69,7 +69,7 @@
 						<div class="inner">
 							<h1>Monto gastado:</h1>
 								<?php
-									$dato = $result[0]
+									$dato = $result[0];
 									echo "<h2 align='center'>$ $dato[0] </h2>";
 								?>
                         </div>
