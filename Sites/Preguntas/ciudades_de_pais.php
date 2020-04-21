@@ -42,10 +42,10 @@
 							<li><a href="../index.php">Home</a></li>
 							<li><a href="../Resultado/usuarios.php">Usuarios</a></li>
 							<li><a href="../Preguntas/ciudades_de_pais.php">Ciudades</a></li>
-							<li><a href="../Preguntas/paies_visitados.php">Paises visitados</a></li>
+							<li><a href="../Preguntas/paies_visitados.php">Países visitados</a></li>
 							<li><a href="../Preguntas/gasto_en_tickets.php">Gasto en tickets</a></li>
 							<li><a href="../Resultado/estadias.php">Estadías en temporada alta</a></li>
-							<li><a href="../Preguntas/genericgasto_intervalo.php">Gastos por fecha</a></li>
+							<li><a href="../Preguntas/gasto_intervalo.php">Gastos por fecha</a></li>
 						</ul>
 					</nav>
 
