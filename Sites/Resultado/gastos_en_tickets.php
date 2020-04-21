@@ -69,7 +69,10 @@
 						<div class="inner">
 							<h1>Monto gastado:</h1>
 								<?php
-									echo "<h2 align='center'>$ $result[0] </h2>";
+									echo "<h2 align='center'>$ $result[0][0] </h2>";
+									foreach ($result as $r) {
+										echo "<h2 align='center'>$ $r[0] </h2>";
+									}
 								?>
                         </div>
 					</div>
