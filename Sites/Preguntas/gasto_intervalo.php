@@ -53,7 +53,7 @@
                             <h1>Gasto en un intervalo dado</h1>
                             <form action="../Resultado/gasto_intervalo.php" method="post">
                                 <label for="f_start">Fecha inicial:</label>
-                                <input type="date" id ="f_start" name="f_start" value="2020-01-13"><br>
+                                <input type="date" id ="f_start" name="f_start" value="2020-01-13"><br><br>
                                 <label for="f_end">Fecha final:</label>
                                 <input type="date" id ="f_end" name="f_end" value="2020-02-29"><br><br>
                                 <input type="submit" value="Buscar">

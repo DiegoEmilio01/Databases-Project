@@ -69,7 +69,7 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-                            <?php echo "<h1>Total gastado por usuario entre $f_s2 y $f_e2 </h1>" ?>
+                            <?php echo "<h2>Total gastado por usuario entre $f_s2 y $f_e2 </h2>" ?>
 							<table class = "alt">	
                                 <?php
                                     
