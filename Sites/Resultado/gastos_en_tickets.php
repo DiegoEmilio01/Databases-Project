@@ -70,7 +70,7 @@
 							<h1>Monto gastado:</h1>
 								<?php
 									$dato = $result[0];
-									echo "<h2 align='center'>$ $dato[0] </h2>";
+									echo "<h1 align='center'>$ $dato[0] </h1>";
 								?>
                         </div>
 					</div>
