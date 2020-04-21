@@ -69,12 +69,13 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Lista de ciudades</h1>
+                            <?php echo "<h1>Total gastado por usuario entre $f_s2 y $f_e2 </h1>" ?>
 							<table class = "alt">	
-								<?php
-									echo "<tr><th>Identificador de usuario</th><th>Nombre de usuario</th><th>Fecha de inicio</th><th>Fecha de término</th><th>Nombre del hotel</th></tr>";
+                                <?php
+                                    
+									echo "<tr><th>Identificador de usuario</th><th>Nombre de usuario</th><th>Total gastado</th></tr>";
 									foreach ($result as $r) {
-									echo "<tr><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td><td>$r[4]</td></tr>";
+									echo "<tr><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td></tr>";
 									}
 								?>
 							</table>
