@@ -22,7 +22,7 @@
 
 			$uid = $_POST["userid"];
 
-			$query_string  = "SELECT SUM(Viajes.precio) FROM Usuarios AS U, TUV, Tickets AS T, Viajes AS V
+			$query_string  = "SELECT SUM(V.precio) FROM Usuarios AS U, TUV, Tickets AS T, Viajes AS V
             WHERE U.uid = TUV.uid AND TUV.tid = T.tid AND TUV.vid = V.vid AND U.uid = '$uid' AND T.f_compra <= CURRENT_DATE;";
 			$query = $db -> prepare($query_string);
 			$query -> execute();
@@ -67,9 +67,9 @@
 						<div class="inner">
 							<h1>Monto gastado:</h1>
 								<?php
-									echo "<h2 align='center'>$result[0]</h2>";
+									echo "<p align='center' style='fontsize: 40px'>$ $result[0]</p>";
 								?>
-						</div>
+                        </div>
 					</div>
 
 				<!-- Footer -->

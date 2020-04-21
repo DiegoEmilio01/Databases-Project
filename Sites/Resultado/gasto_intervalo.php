@@ -20,17 +20,17 @@
 			$databaseName = 'grupo99e2';
 			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
 
-            $f_start = $_POST["f_start"];
-            $f_end = $_POST["f_end"];
+            $f_s = $_POST["f_start"];
+            $f_s2 = str_replace('-', '/', $f_s);  
+            $f_e = $_POST["f_end"];
+            $f_e2 = str_replace('-', '/', $f_e);  
 
-			$query_string  = "SELECT U.uid, U.nombre, R.f_in, R.f_out, H.nombre FROM Usuarios AS U, RUH, Reservas AS R, Hoteles AS H
-            WHERE U.uid = RUH.uid AND R.rid = RUH.rid AND H.hid = RUH.hid AND '2020/01/01' <= R.f in
-            AND R.f out <= '2020/03/31';";
+			$query_string  = "SELECT U.uid, U.nombre, SUM(V.precio)
+            FROM(SELECT tid FROM Tickets WHERE '$f_s2' <= Tickets.f_compra INTERSECT SELECT tid FROM Tickets WHERE Tickets.f_compra <= '$f_e2') AS T, Usuarios AS U, TUV, Viajes AS V 
+            WHERE U.uid = TUV.uid AND V.vid = TUV.vid AND T.tid = TUV.tid GROUP BY U.uid, U.nombre;";
 			$query = $db -> prepare($query_string);
 			$query -> execute();
             $result = $query -> fetchAll();
-            echo "$f_start";
-            echo "$f_end";
 		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
