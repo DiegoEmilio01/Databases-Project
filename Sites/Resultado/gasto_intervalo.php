@@ -29,8 +29,8 @@
 			$query = $db -> prepare($query_string);
 			$query -> execute();
             $result = $query -> fetchAll();
-            echo "$f_start"
-            echo "$f_end"
+            echo "$f_start";
+            echo "$f_end";
 		?>
 		<!-- Wrapper -->
 			<div id="wrapper">
