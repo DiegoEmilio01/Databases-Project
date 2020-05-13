@@ -16,7 +16,7 @@
 	<body class="is-preload">
 		<?php
 			$user = 'grupo99';
-			$password = 'Bbdd314';
+			$password = 'Soto314';
 			$databaseName = 'grupo99e2';
 			$db = new PDO("pgsql:dbname=$databaseName;host=localhost;port=5432;user=$user;password=$password");
 
